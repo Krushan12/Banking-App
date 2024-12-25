@@ -1,6 +1,7 @@
 import {Inter, IBM_Plex_Serif } from "next/font/google";
 import "./globals.css";
 import { icons } from "lucide-react";
+import  Sidebar  from "../components/Sidebar";
 
 const inter = Inter({subsets: ["latin"], variable: "--font-inter"});
 const ibmPlexSerif = IBM_Plex_Serif({
@@ -19,10 +20,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+
       <body
-        className={`${inter.variable} ${ibmPlexSerif.variable} `}
+        className={`${inter.variable} ${ibmPlexSerif.variable} flex`}
+
       >
-        SIDEBAR
+        <Sidebar />
         {children}
       </body>
     </html>
