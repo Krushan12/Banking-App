@@ -10,10 +10,10 @@ export default function TransactionList() {
   ];
 
   return (
-    <div className="bg-white rounded-xl shadow-sm p-6">
+    <div className="bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-700">
       <div className="flex justify-between items-center mb-6">
-        <h3 className="text-lg font-medium">Recent transactions</h3>
-        <button className="text-blue-500 hover:text-blue-600">View all</button>
+        <h3 className="text-lg font-medium text-white">Recent transactions</h3>
+        <button className="text-blue-400 hover:text-blue-300">View all</button>
       </div>
       <div className="space-y-4">
         {transactions.map(transaction => (
